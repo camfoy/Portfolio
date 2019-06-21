@@ -148,7 +148,7 @@ excel_button.on("click", function() {
     title_2.html("Stock Market Scripting");
 
     let excel_2 = d3.select("#excel-2");
-    excel_2.html("<p>VBA allowed me to parse through multiple worksheets, totaling over 4 million rows of stock market data, and perform calculations systematically. This powerful tool not only automated tedious tasks, but also allowed me to apply logic unavailable outside of VBA. Click the GitHub link to view the full code. Feel free to download the workbook and the code to try it out for yourself.</p><p><a href='https://github.com/camfoy/VBA-Stock-Market-Scripting'>GitHub</a></p>");
+    excel_2.html("<p>VBA allowed me to parse through multiple worksheets, totaling over 4 million rows of stock market data, and perform calculations systematically. This powerful tool not only automated tedious tasks, but also allowed me to apply logic unavailable outside of VBA. Click the GitHub link to view the full code.</p><p><a href='https://github.com/camfoy/VBA-Stock-Market-Scripting'>GitHub</a></p>");
 
     let excel_panel_2 = d3.select("#excel-panel-2");
     excel_panel_2.html("<img src='static/images/excel/excel-3.png' alt='' class='img-responsive center-block'>");
