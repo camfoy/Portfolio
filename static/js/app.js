@@ -7,6 +7,9 @@ projects_button.on("click", function() {
     tableau_button.classed("active", false);
     excel_button.classed("active", false);
 
+    let pursuit_row = d3.select("#pursuit-mk");
+    pursuit_row.classed("bottom-problem", true);
+
     let bottom_row = d3.select("#project-2");
     bottom_row.classed("bottom-problem", true);
 
@@ -18,11 +21,19 @@ projects_button.on("click", function() {
 
     let panel_img = d3.select("#panel-img");
     panel_img.html("");
-    panel_img.html("<img src='static/images/projects/pursuit-monkey.png' alt='' class='img-responsive center-block'>");
+    panel_img.html("<img src='static/images/projects/virtual-artist.png' alt='' class='img-responsive center-block'>");
 
     let panel = d3.select("#panel");
     panel.html("");
-    panel.html("<h3>Pursuit Monkey</h3> <p>A simple web app built to quickly chart Google Trends data, Amazon data and Helium 10 data. Users enter up to five search terms to plot against one another and can navigate to different plots, including a Leaflet map. Technology used includes JavaScript, HTML, CSS, Python and SQL.</p> <p><a href='https://github.com/camfoy/Pursuit-Monkey-Project'>GitHub</a></p>");
+    panel.html("<h3>Virtual Artist</h3><p>A web tool that performs neural style transfer on the fly. Takes two user-selected images and runs the neural style transfer algorithm to render an entirely new image. Created using Python with Keras, JavaScript, HTML, CSS and Heroku.</p><p><a href='https://github.com/camfoy/Virtual-Artist-Project'>GitHub</a> | <a href='http://inspire-depiction.herokuapp.com/'>Launch</a></p>");
+
+    let panel_img_mk = d3.select("#panel-img-mk");
+    panel_img_mk.html("");
+    panel_img_mk.html("<img src='static/images/projects/pursuit-monkey.png' alt='' class='img-responsive center-block'>");
+
+    let panel_mk = d3.select("#panel-mk");
+    panel_mk.html("");
+    panel_mk.html("<h3>Pursuit Monkey</h3><p>A simple web app built to quickly chart Google Trends data, Amazon data and Helium 10 data. Users enter up to five search terms to plot against one another and can navigate to different plots, including a Leaflet map. Technology used includes JavaScript, HTML, CSS, Python and SQL.</p><p><a href='https://github.com/camfoy/Pursuit-Monkey-Project'>GitHub</a></p>");
 
     let panel_img_2 = d3.select("#panel-img-2");
     panel_img_2.html("");
@@ -61,6 +72,9 @@ tableau_button.on("click", function() {
     tableau_button.classed("active", true);
     excel_button.classed("active", false);
 
+    let pursuit_row = d3.select("#pursuit-mk");
+    pursuit_row.classed("bottom-problem", false);
+
     let bottom_row = d3.select("#project-2");
     bottom_row.classed("bottom-problem", false);
 
@@ -76,6 +90,12 @@ tableau_button.on("click", function() {
 
     let panel = d3.select("#panel");
     panel.html("");
+
+    let panel_img_mk = d3.select("#panel-img-mk");
+    panel_img_mk.html("");
+
+    let panel_mk = d3.select("#panel-mk");
+    panel_mk.html("");
 
     let panel_img_2 = d3.select("#panel-img-2");
     panel_img_2.html("");
@@ -112,6 +132,9 @@ excel_button.on("click", function() {
     tableau_button.classed("active", false);
     excel_button.classed("active", true);
 
+    let pursuit_row = d3.select("#pursuit-mk");
+    pursuit_row.classed("bottom-problem", false);
+
     let bottom_row = d3.select("#project-2");
     bottom_row.classed("bottom-problem", false);
 
@@ -127,6 +150,12 @@ excel_button.on("click", function() {
 
     let panel = d3.select("#panel");
     panel.html("");
+
+    let panel_img_mk = d3.select("#panel-img-mk");
+    panel_img_mk.html("");
+
+    let panel_mk = d3.select("#panel-mk");
+    panel_mk.html("");
 
     let panel_img_2 = d3.select("#panel-img-2");
     panel_img_2.html("");
